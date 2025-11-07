@@ -1,0 +1,12 @@
+{
+  "welcome": "Welcome to PrajaConnect",
+  "signup": "Sign Up",
+  "login": "Login",
+  "name": "Full Name",
+  "phone": "Phone Number",
+  "password": "Password",
+  "otp": "Enter OTP",
+  "resend": "Resend OTP",
+  "verify": "Verify",
+  "success": "Verification Successful!"
+}

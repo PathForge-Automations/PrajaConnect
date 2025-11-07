@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Government Blue Theme - Trust, Transparency, Excellence */
+    --background: 0 0% 100%;
+    --foreground: 214 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 20% 15%;
+
+    /* Primary: Government Blue */
+    --primary: 214 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 95% 50%;
+    --primary-dark: 214 100% 30%;
+
+    /* Secondary: Professional Grey */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 214 20% 15%;
+
+    --muted: 210 15% 95%;
+    --muted-foreground: 214 10% 45%;
+
+    /* Accent: Light Blue for highlights */
+    --accent: 210 85% 92%;
+    --accent-foreground: 214 100% 35%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 25% 90%;
+    --input: 214 25% 90%;
+    --ring: 214 100% 40%;
+
+    --radius: 0.75rem;
+
+    /* Glassmorphic effects */
+    --glass-bg: 0 0% 100% / 0.8;
+    --glass-border: 214 40% 85%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 100% 40%), hsl(214 95% 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 25% 98%));
+    
+    /* Shadows */
+    --shadow-card: 0 2px 8px hsl(214 25% 85% / 0.3);
+    --shadow-elevated: 0 8px 24px hsl(214 30% 75% / 0.25);
+    
+    /* Transitions */
+    --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 214 20% 25%;
+    --sidebar-primary: 214 100% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 85% 95%;
+    --sidebar-accent-foreground: 214 100% 35%;
+    --sidebar-border: 214 25% 90%;
+    --sidebar-ring: 214 100% 40%;
+  }
+
+  .dark {
+    --background: 214 30% 8%;
+    --foreground: 210 25% 95%;
+
+    --card: 214 25% 10%;
+    --card-foreground: 210 25% 95%;
+
+    --popover: 214 25% 10%;
+    --popover-foreground: 210 25% 95%;
+
+    --primary: 214 95% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 90% 60%;
+    --primary-dark: 214 100% 40%;
+
+    --secondary: 214 20% 15%;
+    --secondary-foreground: 210 25% 95%;
+
+    --muted: 214 20% 15%;
+    --muted-foreground: 210 15% 60%;
+
+    --accent: 214 50% 20%;
+    --accent-foreground: 214 90% 70%;
+
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 85% 55%;
+    --warning-foreground: 0 0% 100%;
+    
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 20%;
+    --input: 214 20% 20%;
+    --ring: 214 90% 60%;
+
+    --glass-bg: 214 25% 10% / 0.8;
+    --glass-border: 214 25% 25%;
+
+    --sidebar-background: 214 28% 9%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 214 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 30% 15%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 214 25% 18%;
+    --sidebar-ring: 214 90% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--glass-border));
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
