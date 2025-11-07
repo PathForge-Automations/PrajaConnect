@@ -48,31 +48,8 @@ SMS OTP (optional)	MSG91 / Twilio integration
 Email Notifications	Gmail App Password (SMTP)
 Hosting (suggested)	Vercel (Frontend), Render or Railway (Backend), Neon (PostgreSQL)
 ⚙️ Folder Structure
-praja-connect-path-main/
-│
-├── backend/
-│   ├── prisma/                 # Database schema (Prisma)
-│   ├── routes/                 # Auth & Issues routes
-│   ├── controllers/            # Business logic
-│   ├── middlewares/            # JWT + role protection
-│   ├── .env                    # Environment configuration
-│   └── server.js               # Entry point
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/              # Portals (Citizen, Collector, Leadership)
-│   │   ├── context/            # Auth context
-│   │   ├── lib/                # Axios API setup
-│   │   ├── components/         # UI components
-│   │   ├── hooks/              # Custom hooks (e.g., Toast)
-│   │   └── App.tsx / main.tsx  # React entry files
-│   ├── vite.config.ts
-│   └── package.json
-│
-└── README.md
+<img width="674" height="648" alt="image" src="https://github.com/user-attachments/assets/0da6471d-763c-491a-8016-2ab728b2aeae" />
 
-🔐 Environment Variables
-📍 Backend — .env
 # Server Config
 PORT=8080
 
@@ -177,21 +154,8 @@ Role-based access (Citizen / Collector / Leadership)
 
 Location data encrypted before storage
 
-🧾 Example API Endpoints
-Method	Endpoint	Description
-POST	/api/auth/register	Register new user (Citizen, Collector, Leadership)
-POST	/api/auth/login	Login & get JWT token
-GET	/api/auth/me	Get logged-in user info
-POST	/api/issues	Citizen submits an issue
-GET	/api/issues/my-issues	Citizen fetches all their issues
-PATCH	/api/issues/:id	Collector updates issue status
-GET	/api/issues/all	Leadership views all issues
-🧩 Demo Accounts (for testing)
-Role	Phone	Password
-Citizen	9876543210	Anil@270603
-Collector	9998887777	Anil@270603
-Leadership	8887776666	Anil@270603
-🏗️ Deployment (Optional)
+<img width="740" height="678" alt="image" src="https://github.com/user-attachments/assets/255ec72b-fed6-40e0-be46-9249105e3c33" />
+
 ✅ Frontend
 
 Deploy on Vercel:
