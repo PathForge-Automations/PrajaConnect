@@ -7,6 +7,10 @@ It enables real-time issue reporting, tracking, and decision-making, creating tr
 
 “When citizens and leaders are directly connected, governance becomes people-driven.”
 
+Screenshot of our PrajaConnect:
+<img width="1208" height="3234" alt="localhost_8081_ (2)" src="https://github.com/user-attachments/assets/059bc680-b791-4f6e-af3f-8398d9352247" />
+
+
 🚀 Core Features
 🧍 Citizen Portal
 
